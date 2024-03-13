@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+int main() {
+ 
+
+ //prints the magic ball
+std::cout << "MAGIC 8-BALL: \n\n";
+
+
+//this function to get diffrenet nummbers not the same each time
+
+int answer = std::rand() %20;  // function to generates a random nubmer 
+std::cout << answer <<"\n"; // output the number
+
+
+
+if (answer == 0) {
+  std::cout << "It is certain";
+
+}
+
+else if(answer == 1){
+  std::cout <<"Nice";
+
+}
+else if(answer == 2){
+  std::cout <<"Better";
+  
+}
+else {
+  std::cout << "Very doubtful.\n";
+
+}
+return 0;
+}
+
